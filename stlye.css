@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+html {
+  font-size: 62%;
+  background-color: lightgrey;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(251, 249, 249);
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: "Poppins", sans-serif;
+}
+.navigation {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  border-radius: 15px;
+  border: 1px solid lightgrey;
+  width: 768px;
+  background-color: white;
+}
+.left-nav {
+  padding: 2rem;
+
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+.right-nav {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(246, 245, 245);
+}
+.left-link {
+  border-radius: 15px;
+  padding: 1.5rem 2rem;
+  display: flex;
+  cursor: pointer;
+
+  align-items: center;
+  gap: 1rem;
+}
+
+.ll-one:hover {
+  background-color: rgb(180, 225, 230);
+}
+.ll-one:hover h3 {
+  color: rgba(27, 200, 137);
+}
+.ll-two:hover {
+  background-color: rgb(249, 203, 211);
+}
+.ll-two:hover h3 {
+  color: rgb(184, 12, 155);
+}
+.ll-three:hover {
+  background-color: rgb(197, 212, 227);
+}
+.ll-three:hover h3 {
+  color: dodgerblue;
+}
+.ll-four:hover {
+  background-color: rgb(235, 235, 191);
+}
+.ll-four:hover h3 {
+  color: rgb(231, 184, 65);
+}
+.ll-five:hover {
+  background-color: rgb(192, 192, 237);
+}
+.ll-five:hover h3 {
+  color: rgb(84, 12, 129);
+}
+.left-link-title > h3 {
+  font-size: 2.2rem;
+  color: rgb(10, 10, 32);
+}
+.left-link-title > p {
+  color: rgb(10, 10, 32);
+  font-size: 1.6rem;
+}
+.img {
+  width: 60px;
+}
+.img > img {
+  width: 100%;
+}
+.right-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.nav-top,
+.nav-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-top a,
+.nav-bottom p,
+.nav-bottom a {
+  font-size: 1rem;
+  margin: 0.7rem 0;
+}
+.nav-top {
+  width: 90rem;
+}
+
+.nav-top a:hover,
+.nav-bottom a:hover {
+  color: dodgerblue;
+}
+.nav-top a,
+.nav-bottom p {
+  font-size: 1.7rem;
+  color: rgb(43, 41, 41);
+}
+.nav-bottom p {
+  font-weight: bold;
+}
+.nav-bottom a {
+  font-size: 1.7rem;
+
+  color: rgb(43, 41, 41);
+}
+/* .ll-five .left-link-title {
+  background-color: blanchedalmond;
+  position: relative;
+} */
+.ll-five .left-link-title > h3::after {
+  content: "new";
+  text-transform: uppercase;
+  padding: 0.2rem 0.7rem;
+  border-radius: 5px;
+  background-color: rgb(204, 71, 225);
+  font-size: 11px;
+  font-weight: bold;
+  color: white;
+  margin-left: 1rem;
+  position: relative;
+  top: -3px;
+}
+.nav-top .hun > a::after {
+  content: "new";
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-color: rgb(255, 231, 187);
+  font-weight: bold;
+  color: rgb(137, 149, 25);
+  padding: 0.2rem 0.7rem;
+  margin-left: 1rem;
+  font-size: 11px;
+
+  align-items: center;
+}
+.luy::after {
+  content: "new";
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-color: palevioletred;
+  font-weight: bold;
+  font-size: 11px;
+  color: rgb(153, 42, 42);
+  padding: 0.2rem 0.7rem;
+  margin-left: 1rem;
+  align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .navigation {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body {
+    height: auto;
+  }
+}
